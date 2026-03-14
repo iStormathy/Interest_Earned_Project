@@ -1,3 +1,5 @@
+// This program collects the users principal, interest rate,
+// and compound time to calculate their balance after 1 year.
 #include <iostream>
 #include <iomanip>
 #include <cmath>
