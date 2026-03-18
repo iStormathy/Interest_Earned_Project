@@ -14,8 +14,10 @@ int main()
 	cin >> rate;
 	cout << "Enter your annual compound time: " << endl;
 	cin >> times;
-	double annualInterest = principal * pow (1 + rate / 100 / times, times); // Calculates final balance after compounding interest
-	cout << "Your balance after 1 year is " << annualInterest << endl;
+	double annualInterest = principal *(1 + rate / 100 / times); // Calculates final balance after compounding interest
+	double interestEarned = annualInterest - principal; // Displays interest without factoring in principal
+	cout << "Your interest earned: " << fixed << setprecision(2) << interestEarned << endl;
+	cout << "Your balance after 1 year is " << fixed << setprecision(2) << annualInterest << endl;
 
 	return 0;
 }
